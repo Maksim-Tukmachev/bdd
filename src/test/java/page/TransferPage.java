@@ -30,7 +30,7 @@ public class TransferPage {
         transferButton.click();
     }
 
-    public void findErrorMessage(String expectionText){
+    public void findErrorMessage(String expectedText){
         errorMessage.shouldHave(exactText(expectedText), Duration.ofSeconds(15)).shouldBe(visible);
     }
 }
